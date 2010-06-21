@@ -1,0 +1,27 @@
+
+<h1>New post</h1>
+
+<% form_for(@post) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :author %><br />
+    <%= f.text_field :author %>
+  </p>
+  <p>
+    <%= f.label :title %>
+    <%= link_to_remote "Check title availability",
+      :url=>{:controller=>"posts", :action=>"check_title_availability"}, :with=>"'title=' + $('#post_title').val()"
+  %>
+  <span id="title_availability" style="display: none;"></span>
+  <br />
+  <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description, :rows => 3%>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>

@@ -1,0 +1,15 @@
+Basic steps:
+    Its a simple scaffhold for posts
+    Setup up your db by running rake db:create and rake db:migrate.
+    Run the app and see the way new post can be created and deleted
+
+What we want you to code ?
+    Write Integration test using Webrat + Selenium
+
+What will be evaluated ?
+    Clean code
+    Ability to test the posts index action
+    Ability to test the posts destroy action with javascript alert
+    Ability to test the "New Post" facebox popup
+    Ability to test the "check title availability" link_to_remote with result text assertion
+
