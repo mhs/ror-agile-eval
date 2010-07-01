@@ -1,18 +1,19 @@
-<p>
-  <b>Author:</b>
-  <%=h @post.author %>
-</p>
+<div class="post">
+  <p class="author">
+    <b>Author:</b>
+    <%=h @post.author %>
+  </p>
 
-<p>
-  <b>Title:</b>
-  <%=h @post.title %>
-</p>
+  <p class="title">
+    <b>Title:</b>
+    <%=h @post.title %>
+  </p>
 
-<p>
-  <b>Description:</b>
-  <%=h @post.description %>
-</p>
+  <p class="description">
+    <b>Description:</b>
+    <%=h @post.description %>
+  </p>
 
-
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+  <%= link_to 'Edit', edit_post_path(@post) %> |
+  <%= link_to 'Back', posts_path %>
+</div>
