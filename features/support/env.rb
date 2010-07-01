@@ -22,8 +22,8 @@ Webrat.configure do |config|
   config.open_error_files = false # Set to true if you want error pages to pop up in the browser
   config.application_address = "example.com"
   config.application_port = 3001
-  config.selenium_browser_key = "*chrome" # ran firefox2
-  # config.selenium_browser_key = "*firefox" # ran firefox2
+  config.selenium_browser_key = "*chrome" 
+  # config.selenium_browser_key = "*firefox" 
   # config.selenium_browser_key = "*custom /Applications/Firefox.app/Contents/MacOS/firefox-bin"  
 end
 
